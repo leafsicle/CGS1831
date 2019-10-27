@@ -1,22 +1,42 @@
 body {
-  background-color: #f5f5f5;
+  background-color: #3f2860;
   color: #3f2860;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h1 {
+header {
   background-color: #9bc1c2;
-  text-align: center;
-  line-height: 200%;
-} /*Task 2.2 and 2.3 combined into one block*/
+  background-image: url(../Yoga4/lilyheader.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+
+h1 {
+  padding-top: 50px;
+  padding-left: 2em;
+}
 
 nav {
   text-align: center;
   font-weight: bold;
+  padding: 1em;
 }
 
 nav a {
   text-decoration: none;
+}
+
+main {
+  padding-left: 2em;
+  padding-right: 2em;
+  display: block;
+}
+
+img {
+  padding-left: 1em;
+  padding-right: 1em;
+  display: block;
 }
 
 footer {
@@ -24,6 +44,7 @@ footer {
   font-size: 0.6em;
   font-style: italic;
   text-align: center;
+  padding: 1em;
 }
 
 .studio {
@@ -32,6 +53,16 @@ footer {
 
 #wrapper {
   width: 80%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f5f5f5;
+  min-width: 1000px;
+  max-width: 1280px;
   /* I hope you don't mind that I did it this way versus spelling each side out*/
+}
+
+#hero {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
