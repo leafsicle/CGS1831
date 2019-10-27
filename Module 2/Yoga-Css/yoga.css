@@ -22,12 +22,22 @@ nav a {
   text-decoration: none;
 }
 
-.studio {
-  font-style: italic;
+a:visited {
+  color: #3f2860;
 }
 footer {
   background-color: #9bc1c2;
   font-size: 0.6em;
   font-style: italic;
   text-align: center;
+}
+
+.studio {
+  font-style: italic;
+}
+
+#wrapper {
+  width: 80%;
+  margin: 0 auto;
+  /* I hope you don't mind that I did it this way versus spelling each side out*/
 }
