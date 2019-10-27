@@ -4,14 +4,11 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body h1 {
+h1 {
   background-color: #9bc1c2;
   text-align: center;
-}
-
-h1 {
   line-height: 200%;
-}
+} /*Task 2.2 and 2.3 combined into one block*/
 
 nav {
   text-align: center;
@@ -22,9 +19,6 @@ nav a {
   text-decoration: none;
 }
 
-a:visited {
-  color: #3f2860;
-}
 footer {
   background-color: #9bc1c2;
   font-size: 0.6em;
