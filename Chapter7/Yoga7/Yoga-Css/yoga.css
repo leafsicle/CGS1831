@@ -89,7 +89,7 @@ footer {
     display: inline;
 }
 #mobile {
-    display: block;
+    display: none;
 }
 #wrapper {
     width: 80%;
