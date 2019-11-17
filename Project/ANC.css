@@ -11,15 +11,15 @@ body {
 }
 
 header {
-    margin-top: 0;
     background-color: #17255a;
     color: #f5e2c8;
     min-height: 100px;
+    display: flex;
 }
 
-h1 {
+header div{
+    /* margin: 0 10px 5px; */
 }
-
 nav {
     font-weight: bold;
     padding: 1em;
@@ -40,7 +40,7 @@ nav a:visited {
     color: #497777;
 }
 nav a:hover {
-    color: #a26100;
+    color: #DA2C38 ;
 }
 nav ul {
     list-style: none;
@@ -49,6 +49,7 @@ nav ul {
 
 main {
     display: flex;
+    height: 100%vh;
 }
 
 footer {
@@ -62,12 +63,45 @@ footer {
 footer a {
     color: inherit;
 }
+.center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.center-row {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
 .left {
     flex: 2;
     border-right: 2px solid #070707;
+    background-color: #2B061E ;
+}
+.left-header {
+    flex: 2;
 }
 .right {
     flex: 8;
+}
+
+.menu-card {
+    margin: 20px;
+    padding: 5px;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu-card .menu-item {
+    border: 1px solid black;
+    width: 90%;
+    height: auto;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
 }
 #desktop {
     display: inline;
@@ -85,6 +119,7 @@ footer a {
 }
 #wrapper {
     width: 80%;
+    min-height: 80%;
     margin-left: auto;
     margin-right: auto;
     background-color: #f5f5f5;
@@ -94,60 +129,30 @@ footer a {
 
 /* Media Query for tablets */
 @media only screen and (max-width: 1024px) {
-    h2,
-    h3,
-    p,
-    dl {
-        padding: 0 2em;
-    }
 
     header {
         padding-top: 1px;
     }
 
     nav {
-        float: none;
-        width: auto;
-        padding-left: 2em;
+s
     }
 
     nav a {
-        padding: 0.2em;
-        margin-left: 0.3em;
-        float: left;
-        width: 23%;
+
     }
 
     body {
-        margin: 0;
-        padding: 0;
+
     }
 
     main {
-        padding: 2.5em 1em;
-        margin: 0;
-        font-size: 90%;
-        clear: both;
+
     }
     main ul {
-        margin-left: 2em;
     }
 
     h1 {
-        padding-top: 1px;
-    }
-
-    .clear {
-        padding-left: 2em;
-    }
-
-    .floatleft {
-        margin: 0 0 1em 2em;
-    }
-
-    #hero img {
-        width: 100%;
-        height: auto;
     }
 
     #wrapper {
@@ -160,42 +165,36 @@ footer a {
 
 /*media query for mobile*/
 @media only screen and (max-width: 768px) {
-    h1 {
-        font-size: 2em;
-        padding: 0.25em 0 0 1.5em;
-        width: 85%;
-        text-align: center;
+ 
+    header {
+        padding-top: 1px;
+    }
+
+    nav {
+s
     }
 
     nav a {
-        padding: 0.5em;
-        margin-left: 0.5em;
-        width: 45%;
-        float: left;
-        min-width: 6em;
+
+    }
+
+    body {
+
     }
 
     main {
-        padding-top: 0;
+
+    }
+    main ul {
     }
 
-    footer {
-        padding: 0.5em;
+    h1 {
+    }
+
+    #wrapper {
+        width: 100%;
+        min-width: 0;
         margin: 0;
-    }
-
-    .floatleft {
-        float: none;
-        display: none;
-    }
-
-    #desktop {
-        display: none;
-    }
-    #hero {
-        display: none;
-    }
-    #mobile {
-        display: inline;
+        padding: 0;
     }
 }
