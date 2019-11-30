@@ -1,71 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!--[if lt IE 9]>
-            <script src="html5shiv.js"></script>
-        <![endif]-->
-        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        <meta charset="UTF-8" />
-        <link href="./ANC.css" rel="stylesheet" />
-        <link href="./images/favicon.ico" rel="icon" type="image/x-ico" />
-        <title>
+  <head>
+    <!--[if lt IE 9]>
+      <script src="html5shiv.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link href="./ANC.css" rel="stylesheet" />
+    <link href="./images/favicon.ico" rel="icon" type="image/x-ico" />
+    <title>
+      Angry Nerd Cafe
+    </title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <div class="left-header">
+          <h1>
             Angry Nerd Cafe
-        </title>
-    </head>
-    <body>
-        <div id="wrapper">
-            <header>
-                <div class="left-header">
-                    <h1>
-                        Angry Nerd Cafe
-                    </h1>
-                    <h5>
-                        <div>M-F: 6-8</div>
-                        <div>Weekend: 7-7</div>
-                        <a id="mobile" href="tel:888-555-5555">
-                            888-555-5555
-                        </a>
-                        <span id="desktop">
-                            888-555-5555
-                        </span>
-                    </h5>
-                </div>
-                <div></div>
-                <span style="float: right;">
-                    Picture of fancy coffee on the right
-                </span>
-            </header>
-            <main>
-                <aside class="left">
-                    <nav>
-                        <ul>
-                            <li><a href="./index.html">Home</a></li>
-                            <li><a href="./menu.html">Menu</a></li>
-                            <li><a href="./about.html">About Us</a></li>
-                            <li><a href="./contact.html">Contact Us</a></li>
-                        </ul>
-                    </nav>
-                </aside>
-                <section class="right">
-                    <div class="center">
-                        <p>
-                            THIS WILL BE A PICTURE OF THE FRONT OF THE STORE
-                        </p>
-                        <p class="">Angry Nerd Cafe <br /></p>
-                        <p>1600 Pennsylvania<br /></p>
-                        <p>Washington, D.C.<br /></p>
-                    </div>
-                </section>
-            </main>
-            <footer>
-                &copy; 2019
-                <span class="">
-                    Made with &hearts; in Sunny St. Pete, Fl.
-                </span>
-                <a href="mailto:cookem529@gmail.com">
-                    <br />cookem529@gmail.com
-                </a>
-            </footer>
+          </h1>
+          <h5>
+            <span>M-F: 6-8</span>
+            <span>Weekend: 7-7</span>
+            <a id="mobile" href="tel:888-555-5555">
+              888-555-5555
+            </a>
+            <span id="desktop">
+              888-555-5555
+            </span>
+          </h5>
         </div>
-    </body>
+        <span class="headerdecorations" style="float: right;">
+          <img alt="" src="./images/headerBG.jpg" />
+        </span>
+      </header>
+      <main>
+        <aside class="left">
+          <nav>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./menu.html">Menu</a></li>
+              <li><a href="./store.html">Mugs and Merch</a></li>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <section class="right">
+          <div class="center">
+            <h2>
+              <a target="_blank" href="https://www.google.com/maps/@27.779143,-82.6355547,17.08z">
+                Angry Nerd Cafe
+              </a>
+              <br />
+            </h2>
+            <p>1600 Pennsylvania<br /></p>
+            <p>Washington, D.C. DC 20500<br /></p>
+            <a href="mailto:cookem529@gmail.com"> cookem529@gmail.com </a>
+            <span>
+              888-555-5555
+            </span>
+            <br />
+            <form method="POST" action="https://webdevbasics.net/scripts/yoga.php">
+              <p>Fields that are marked with an * are required</p>
+              <label for="myName">
+                *Name:
+              </label>
+              <input id="myName" name="myName" type="text" required="required" placeholder="Please enter your name" />
+              <label for="myEmail">
+                *Email:
+              </label>
+              <input
+                id="myEmail"
+                name="myEmail"
+                type="email"
+                required="required"
+                placeholder="Please enter your Email"
+              />
+              <label for="myCommments">
+                *Comments:
+              </label>
+              <textarea
+                id="myCommments"
+                name="myCommments"
+                rows="2"
+                cols="20"
+                required="required"
+                placeholder="Tell us how we can improve"
+              ></textarea>
+              <input id="mySubmit" type="submit" value="Submit" />
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer>
+        &copy; 2019
+        <span class="">
+          Made with &hearts; in Sunny St. Pete, Fl.
+        </span>
+        <a href="mailto:cookem529@gmail.com"> <br />cookem529@gmail.com </a>
+      </footer>
+    </div>
+  </body>
 </html>
